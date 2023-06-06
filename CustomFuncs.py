@@ -49,7 +49,7 @@ def sum_of_dividers(num):
     return sum
 
 #данному числу k выводит все пары дружественных чисел, каждое из которых не превосходит k
-def frendly_numbers(*args):
+def frendly_numbers(*args, k):
     for i in range(2, k):
         partner = sum_of_dividers(i)
         if i == sum_of_dividers(partner) and i > partner:
