@@ -73,10 +73,9 @@ print(result)
 # Ввод:           Вывод:
 # 300             220 284
 
-"""
+
 k = int(input("Введите число: "))
 result = sum_of_dividers(k)
 
 print(result)
-print(frendly_numbers())
-"""
+print(frendly_numbers(k))
