@@ -49,7 +49,7 @@ def sum_of_dividers(num):
     return sum
 
 #данному числу k выводит все пары дружественных чисел, каждое из которых не превосходит k
-def frendly_numbers(*args, k):
+def frendly_numbers(k):
     for i in range(2, k):
         partner = sum_of_dividers(i)
         if i == sum_of_dividers(partner) and i > partner:
@@ -77,3 +77,17 @@ def reverse_range(num):
     if num > 0: 
         reverse_range(num - 1)
     print(num, end = ' ')
+
+# два числа A и B, и возводит число А в целую степень B с помощью рекурсии
+
+def NumberDegree(n, d):
+    if d == 0:
+        return 1 
+    return n * (NumberDegree(n, d - 1))
+
+# рекурсивная функция sum(a, b), двух целых неотрицательных чисел
+#  до 996+996 считает, если n1 и 1 поменять местами считает до 997+997
+def NumberSum(n1, n2):
+    if n2 < 0:
+        return 0 
+    return n1 + (NumberSum(1, n2 - 1))
