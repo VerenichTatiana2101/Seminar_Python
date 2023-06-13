@@ -25,7 +25,7 @@
 
 """
 values = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-transormed_values = list(map(lambda y:y + 1, values))
+transormed_values = list(map(lambda y:y + 1, values)) #transormed_values = list(map(lambda y:y, values)) копия
 print(values)
 print(transormed_values)
 """
@@ -66,14 +66,14 @@ print(sorbits)
 print(elorbit[sorbits.index((max(sorbits)))])
 """
 
-orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 
-def find_fathest_orbit(orbits):
-    filtered_orbits = filter(lambda x: x[0] != x[1], orbits)
-    return max(filtered_orbits, key=lambda x: x[0] * x[1])
+# def find_fathest_orbit(orbits):
+#     filtered_orbits = filter(lambda x: x[0] != x[1], orbits)
+#     return max(filtered_orbits, key=lambda x: x[0] * x[1])
 
-result = find_fathest_orbit(orbits)
-print(find_fathest_orbit(orbits))
+# result = find_fathest_orbit(orbits)
+# print(find_fathest_orbit(orbits))
 
 # Задача №51. Общее обсуждение
 # Напишите функцию same_by(characteristic, objects), которая
@@ -91,25 +91,26 @@ print(find_fathest_orbit(orbits))
 # else:
 #   print(‘different’)
 
-def same_by(fun,objects):
-    for item in objects:
-        if not fun(item):
-            return False
-    return True
+# def same_by(fun,objects):
+#     for item in objects:
+#         if not fun(item):
+#             return False
+#     return True
 
-values = [0, 3, 10, 6]
+# values = [0, 3, 10, 6]
 
-if same_by(lambda x: x % 2 == 0, values):
-    print("same")
-else:
-    print("different")
+# if same_by(lambda x: x % 2 == 0, values):
+#     print("same")
+# else:
+#     print("different")
 
 
 
-values = [0, 2, 10, 6]
+# values = [0, 2, 10, 6]
 
-if same_by(lambda x: x % 2 == 0, values):
-    print('some')
-else:
-    print('different')
-    
+# if same_by(lambda x: x % 2 == 0, values):
+#     print('some')
+# else:
+#     print('different')
+
+
