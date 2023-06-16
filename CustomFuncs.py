@@ -1,3 +1,5 @@
+import os
+
 # найти N-е число Фибоначчи
 def last_fibon(n):
     if n in [0, 1]:
@@ -91,3 +93,5 @@ def NumberSum(n1, n2):
     if n2 < 0:
         return 0 
     return n1 + (NumberSum(1, n2 - 1))
+
+####################
